@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Currency Converter</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="converter-card">
+
+            <h1>💱 Currency Converter</h1>
+
+            <p class="subtitle">
+                Convert any currency to Indian Rupees
+            </p>
+
+
+            <div class="input-group">
+
+                <label for="currency">Currency</label>
+
+                <input
+                    type="text"
+                    id="currency"
+                    placeholder="Example: USD"
+                >
+
+            </div>
+
+
+            <div class="input-group">
+
+                <label for="amount">Amount</label>
+
+                <input
+                    type="number"
+                    id="amount"
+                    placeholder="Enter amount"
+                >
+
+            </div>
+
+
+            <button id="convertBtn">
+                Convert to INR
+            </button>
+
+
+            <div id="result" class="result">
+                Enter a currency and amount
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+
+</html>
